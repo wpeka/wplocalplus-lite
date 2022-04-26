@@ -15,7 +15,7 @@
  * Plugin Name:       WP Local Plus
  * Plugin URI:        https://club.wpeka.com/
  * Description:       WordPress Business Directory Plugin
- * Version:           1.4.4
+ * Version:           1.4.5
  * Author:            WPeka
  * Author URI:        https://club.wpeka.com
  * License:           GPL-2.0+
@@ -31,41 +31,6 @@ if ( ! defined( 'WPINC' ) ) {
 
 if ( ! defined( 'WPLOCALPLUS_LITE_PLUGIN_URL' ) ) {
 	define( 'WPLOCALPLUS_LITE_PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-}
-
-if ( ! function_exists( 'wlp_fs' ) ) {
-	/**
-	 * Helper function to access SDK.
-	 *
-	 * @return Analytics
-	 */
-	function wlp_fs() {
-		global $wlp_fs;
-
-		if ( ! isset( $wlp_fs ) ) {
-			// Include Analytics SDK.
-			require_once dirname( __FILE__ ) . '/analytics/start.php';
-
-			$wlp_fs = ras_dynamic_init(
-				array(
-					'id'              => '3',
-					'slug'            => 'wplocalplus-lite',
-					'product_name'    => 'WP Local Plus Lite',
-					'module_type'     => 'plugin',
-					'version'         => '1.4.4',
-					'plugin_basename' => 'wplocalplus-lite/wplocalplus-lite.php',
-					'plugin_url'      => WPLOCALPLUS_LITE_PLUGIN_URL,
-				)
-			);
-		}
-
-		return $wlp_fs;
-	}
-
-	// Init Analytics.
-	wlp_fs();
-	// SDK initiated.
-	do_action( 'wlp_fs_loaded' );
 }
 
 // ACF custom field.
@@ -101,7 +66,7 @@ function wplocalplus_lite_acf_settings_show_admin( $show_admin ) {
  * Rename this for your plugin and update it as you release new versions.
  */
 if ( ! defined( 'WPLOCALPLUS_LITE_VERSION' ) ) {
-	define( 'WPLOCALPLUS_LITE_VERSION', '1.4.4' );
+	define( 'WPLOCALPLUS_LITE_VERSION', '1.4.5' );
 }
 if ( ! defined( 'WPLOCALPLUS_PLACE_POST_TYPE' ) ) {
 	define( 'WPLOCALPLUS_PLACE_POST_TYPE', 'wplocal_places' );
