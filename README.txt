@@ -4,7 +4,7 @@ Donate link: https://club.wpeka.com
 Tags: business directory, business listings, directory plugin, company business directory, local business directory, listings directory, link directory, member directory, staff directory
 Requires at least: 5.0+
 Requires PHP: 5.0
-Tested up to: 5.7
+Tested up to: 5.9.3
 Stable tag: 1.4.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
