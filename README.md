@@ -4,8 +4,8 @@
 **Tags:** business directory, business listings, directory plugin, company business directory, local business directory, listings directory, link directory, member directory, staff directory  
 **Requires at least:** 5.0+  
 **Requires PHP:** 5.0  
-**Tested up to:** 5.9.3  
-**Stable tag:** 1.4.6  
+**Tested up to:** 6.3  
+**Stable tag:** 1.4.7  
 **License:** GPLv2 or later  
 **License URI:** http://www.gnu.org/licenses/gpl-2.0.html  
 
@@ -123,8 +123,12 @@ Yes it can. The translation template files (pot) are under the /languages folder
 Yes it is. You can network activate the plugin or activate per site where you need to make the business directory.
 
 ## Changelog ##
+### 1.4.7 ###
+Fix: Compatibility with WordPress 6.3
+
 ### 1.4.6 ###
 Fix: Fixed plugin code as per WP standards and PHPCS.
+
 ### 1.4.5 ###
 Update: Removed analytics library
 
